@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter/services.dart';
+import 'package:flutter/services.dart';
 
 import 'package:disenos/src/pages/basico_page.dart';
 import 'package:disenos/src/pages/scroll_page.dart';
@@ -12,7 +12,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // SystemChrome.setSystemUIOverlayStyle(
     //     SystemUiOverlayStyle.light.copyWith(statusBarColor: Colors.white));
-
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light
+        .copyWith(statusBarColor: Colors.transparent));
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Diseños',
